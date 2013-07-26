@@ -1,0 +1,13 @@
+{
+  "personal_package_archives": [
+    {"name": "redis", "owner": "rwky"}
+  ],
+  "apt_packages": [
+    {"name": "redis-server"}
+  ],
+  "services": [
+    {"name": "redis-server"}
+  ]
+}
+ 
+

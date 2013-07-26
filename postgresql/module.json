@@ -1,0 +1,31 @@
+{
+  "source_lists": [{
+    "filename": "pgdg.list",
+    "key_uri": "http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc",
+    "sources": [{
+      "uri": "http://apt.postgresql.org/pub/repos/apt/",
+      "distribution": "precise-pgdg",
+      "components": ["main"]
+    }]
+  }],
+  "apt_packages": [
+    {"name": "postgresql-9.2"},
+    {"name": "postgresql-client-9.2"},
+    {"name": "postgresql-contrib-9.2"}
+  ],
+  "templates": [
+    {
+      "path": "/etc/postgresql/9.2/main/pg_hba.conf",
+      "source": "templates/pg_hba.conf",
+      "mode": 644
+    },
+    {
+      "path": "/etc/postgresql/9.2/main/postgresql.conf",
+      "source": "templates/postgresql.conf",
+      "mode": 644
+    }
+  ],
+  "services": [
+    {"name": "postgresql"}
+  ]
+}

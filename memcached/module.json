@@ -1,0 +1,9 @@
+{
+  "apt_packages": [
+    {"name": "memcached"}
+  ],
+  "services": [
+    {"name": "memcached"}
+  ]
+}
+
